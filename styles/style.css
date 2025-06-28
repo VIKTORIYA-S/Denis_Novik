@@ -1,0 +1,89 @@
+@import url(normalise.css);
+@import url(vars.css);
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--white-color);
+}
+
+.container {
+    max-width: 970px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main,
+footer {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+/* ul {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* HEADER */
+
+.header {
+    max-width: 970px;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+/* .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__item a {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+    color: var(--gray-color);
+}
+
+.nav__item a:hover {
+    color: var(--black-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav__item .active {
+    color: var(--black-color);
+}
