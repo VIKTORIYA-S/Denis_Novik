@@ -82,6 +82,7 @@ li {
 .nav__item a:hover {
     color: var(--black-color);
     transition: all 0.3s ease-in-out;
+    font-weight: 600;
 }
 
 .nav__item .active {
@@ -371,6 +372,8 @@ li {
     color: var(--white-color);
     cursor: pointer;
     margin-bottom: 30px;
+    outline: none;
+    border: none;
 }
 
 .footer__list {
@@ -392,4 +395,9 @@ li {
     font-size: 16px;
     color: var(--gray-color);
     text-align: center;
+}
+
+.footer__link:hover {
+    opacity: 0.5;
+    transition-duration: 1s;
 }
